@@ -33,7 +33,6 @@ hook.Add( "OnLuaError", "MenuErrorHandler", function( str, realm, stack, addonti
 		return
 	end
 
-	local text = language.GetPhrase( "errors.something_p" )
 
 	-- We know the name, display it to the user
 	if ( isstring( addontitle ) ) then
